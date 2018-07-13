@@ -1,0 +1,58 @@
+import java.io.*;
+
+
+class cs1q3{
+
+
+public static void main(String args[])throws IOException{
+
+
+BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+
+int[][]a=new int[5][5];
+
+int i;
+
+int j;
+
+System.out.println("Enter the elements");
+
+mainloop:
+
+for(i=0;i<3;i++){
+
+for( j=0;j<3;j++)
+{ 
+
+
+
+a[i][j]=Integer.parseInt(br.readLine());
+
+if((i>j)&&(a[i][j] != 0))
+
+break mainloop;
+
+
+}
+
+}
+
+System.out.println("YOU TRIED TO ENTER O BELOW TH DIAGONAL ELEMENT");
+
+System.out.println("IT IS NOT ALLOWED IN UPPERTRIGULAR MATRICES SORRY!");
+
+System.out.println("YOU INPUTS WERE");
+
+
+for(i=0;i<3;i++){
+
+for(j=0;j<3;j++){
+
+System.out.print(a[i][j]+"\t");
+
+}
+System.out.println("");
+}
+
+}
+}

@@ -1,0 +1,26 @@
+import java.io.*;
+
+import java.util.*;
+
+class Person
+{
+String name,gender,address;
+int age;
+float height,weight;
+
+
+Person(String n,int ag,String gen,float hei,float wei,String add)
+{
+name=n;
+age=ag;
+gender=gen;
+height=hei;
+weight=wei;
+address=add;
+}
+
+
+
+
+
+}
